@@ -1,76 +1,40 @@
-# 🌴 Amutharaj Sri Lankan Tourism Website
+# Amutharaj Sri Lankan Tourism Site
 
-Welcome to the official repository of **Amutharaj Tours** – a beautifully designed tourism website to explore the nature, culture, and magic of Sri Lanka. This site showcases popular destinations, travel booking options, a photo gallery, and contact details, all in a responsive and modern design.
+Welcome to the Amutharaj Sri Lankan Tourism website repository!  
+This site helps travelers discover the beauty, culture, and unique destinations of Sri Lanka, offering custom tour packages and an easy booking process.
 
----
+## Features
 
-## 🌟 Features
+- **Modern landing page:** Hero image, catchy intro, and call-to-action.
+- **Navigation:** Sticky navbar with quick links to all sections and language switcher (English/தமிழ்).
+- **Top Destinations:** Visual cards highlighting must-see places like Sigiriya, Nuwara Eliya, Mirissa Beach, and Ella.
+- **Plan Your Trip:** Section describing how tours can be customized.
+- **Booking Form:** Collects visitor info, travel date, number of travelers, and package selection.
+- **Photo Gallery:** Grid layout with beautiful Sri Lankan imagery.
+- **Contact Section:** Contact form, email, phone, address, and map embed.
+- **WhatsApp Chat Button:** Floating button for instant messaging.
+- **Language Switcher:** Toggle main text between English and Tamil.
 
-- 🌍 Multi-language switcher (English & Tamil)
-- 🏖️ Image gallery with stunning Sri Lankan landscapes
-- 📝 Interactive tour booking form
-- 🗺️ Embedded Google Maps
-- 💬 WhatsApp Chat Button for quick contact
-- 📱 Fully responsive (mobile-friendly)
-- 💡 Simple, clean HTML and CSS structure
+## How to Use
 
----
+1. Clone this repository.
+2. Open the main HTML file (`index.html`) in your browser.
+3. All styles and scripts are self-contained in the HTML (no build step required).
 
-## 🗂️ Project Structure
+## Customization
 
+- **Images:** Images are loaded dynamically via Unsplash. Replace URLs with your own images for production use.
+- **Contact Info:** Update the email, phone, and address in the Contact section as needed.
+- **Language Switcher:** The script switches main UI text between English and Tamil. Add more fields as needed for full localization.
 
----
+## Deployment
 
-## 🚀 How to Use This Project
+You can deploy this site easily with GitHub Pages or any static hosting provider.
 
-### ✅ View Locally
+## License
 
-1. Download this repository as a ZIP file and extract it.
-2. Open `index.html` in any web browser.
-3. Explore the interactive, responsive tourism site.
-
----
-
-### 🌐 Deploy on GitHub Pages (Free Hosting)
-
-1. Create a GitHub account at [github.com](https://github.com) if you don’t have one.
-2. Create a new repository named exactly:  
-   **`stuwardcode.github.io`**
-3. Upload the following files to that repo:
-   - `index.html`
-   - `README.md`
-4. Wait a few seconds. Your website will be live at:  
-   👉 `https://stuwardcode.github.io`
-
-✅ **No frameworks or build tools needed** — just pure HTML/CSS.
+&copy; 2025 Amutharaj Sri Lankan Tourism. All rights reserved.
 
 ---
 
-## ✍️ How to Edit the Website
-
-- Open the `index.html` file in any code editor (like VS Code, Notepad++, Sublime).
-- Update content, images, links, or contact details as needed.
-- Re-upload the updated file to GitHub to reflect changes.
-
-To change the default text:
-- Replace headlines, paragraphs, or images inside the `<body>` tag.
-- For Tamil translations, use the dropdown language switcher in the top navigation.
-
----
-
-## 📷 Customize with Your Own Content
-
-Replace Unsplash URLs with your personal travel images:
-
-```html
-<img src="https://yourdomain.com/images/myimage.jpg" alt="Your Place">
-
----
-
-Let me know if you'd like:
-
-- A **Tamil version** of this `README.md`
-- An **interactive README** with badges and GIFs
-- To turn this into a **multi-page website** with separate HTML files
-
-I'm happy to help further! 😊
+*This repository powers the Amutharaj Tours landing site for Sri Lankan tourism packages. Feel free to contribute or fork for your own tour business!*
