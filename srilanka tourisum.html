@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amutharaj Sri Lankan Tourism</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: url('https://source.unsplash.com/1600x600/?sri-lanka,nature') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    header p {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    header .cta {
+      background-color: #28a745;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    nav {
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav select {
+      padding: 5px;
+      font-size: 1rem;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .destinations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {
+      padding: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    form input, form textarea, form button, form select {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Amutharaj Tours</strong></div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#plan">Plan</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <select id="languageSwitcher" onchange="switchLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="ta">தமிழ்</option>
+      </select>
+    </div>
+  </nav>
+
+  <header id="home">
+    <h1>Welcome to Paradise – Explore Sri Lanka</h1>
+    <p>Discover the culture, nature, and magic of Sri Lanka with Amutharaj Tours</p>
+    <a class="cta" href="#destinations">Discover Places</a>
+  </header>
+
+  <section class="section" id="destinations">
+    <h2>Top Destinations</h2>
+    <div class="destinations">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?sigiriya,sri-lanka" alt="Sigiriya">
+        <h3>Sigiriya Rock Fortress</h3>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?nuwara-eliya,sri-lanka" alt="Nuwara Eliya">
+        <h3>Nuwara Eliya</h3>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?mirissa,sri-lanka" alt="Mirissa Beach">
+        <h3>Mirissa Beach</h3>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?ella,sri-lanka" alt="Ella">
+        <h3>Ella Scenic Train</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="plan">
+    <h2>Plan Your Trip</h2>
+    <p>Let us help you craft your dream vacation. Choose from custom packages, guided tours, and unforgettable local experiences. Contact us for a personalized plan tailored to your interests.</p>
+  </section>
+
+  <section class="section" id="booking">
+    <h2>Book a Tour</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <label>Select Date:</label>
+      <input type="date" name="date" required>
+      <label>No. of Travelers:</label>
+      <input type="number" name="travelers" min="1" required>
+      <label>Choose a Package:</label>
+      <select name="package" required>
+        <option value="heritage">Cultural Heritage Tour</option>
+        <option value="beach">Beach Getaway</option>
+        <option value="adventure">Hill Country Adventure</option>
+      </select>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?sri-lanka,beach" alt="Beach">
+      <img src="https://source.unsplash.com/400x300/?sri-lanka,wildlife" alt="Wildlife">
+      <img src="https://source.unsplash.com/400x300/?sri-lanka,temple" alt="Temple">
+      <img src="https://source.unsplash.com/400x300/?sri-lanka,train" alt="Train">
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: info@amutharajtours.lk</p>
+    <p>Phone: +94 77 123 4567</p>
+    <p>Address: Colombo, Sri Lanka</p>
+
+    <div style="margin-top:2rem;">
+      <h3>Find Us on the Map</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63314.75521694938!2d79.8478867!3d6.9270786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2594a52f4085d%3A0x7353ff3c660cbb8!2sColombo!5e0!3m2!1sen!2slk!4v1594371900430!5m2!1sen!2slk"
+        width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Amutharaj Sri Lankan Tourism. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Chat Button -->
+  <a class="whatsapp-button" href="https://wa.me/94771234567" target="_blank" title="Chat with us on WhatsApp">
+    💬
+  </a>
+
+  <!-- Language Switcher Script -->
+  <script>
+    function switchLanguage(lang) {
+      if (lang === 'ta') {
+        document.querySelector('header h1').textContent = 'சுவர்க்கத்துக்குச் செல்வதற்கான உங்கள் வழி!';
+        document.querySelector('header p').textContent = 'அமுதராஜ் சுற்றுலா மூலம் இலங்கையின் இயற்கையும் கலாச்சாரமும் சந்திக்கவும்!';
+        document.querySelector('.cta').textContent = 'இடங்களை காண்க';
+        document.querySelector('#destinations h2').textContent = 'பிரபலமான இடங்கள்';
+        document.querySelector('#plan h2').textContent = 'உங்கள் பயணத்தை திட்டமிடுங்கள்';
+        document.querySelector('#plan p').textContent = 'உங்கள் விருப்பங்களுக்கு ஏற்ப தனிப்பட்ட திட்டங்களை உருவாக்க எங்களை அணுகுங்கள்.';
+        document.querySelector('#gallery h2').textContent = 'புகைப்படத்தொகுப்பு';
+        document.querySelector('#contact h2').textContent = 'எங்களை தொடர்புகொள்ள';
+      } else {
+        location.reload(); // revert back to English
+      }
+    }
+  </script>
+</body>
+</html>
